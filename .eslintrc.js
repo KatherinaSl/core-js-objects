@@ -21,6 +21,21 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'max-classes-per-file': 'off',
+    'no-use-before-define': ['error', { classes: false }],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: [
+          '_id',
+          '_element',
+          '_classes',
+          '_attrs',
+          '_pseudoClasses',
+          '_pseudoEl',
+        ],
+      },
+    ],
   },
   plugins: ['prettier'],
   noInlineConfig: true,
